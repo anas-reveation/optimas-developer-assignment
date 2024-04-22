@@ -8,6 +8,7 @@ import Defination from '../images/defination.svg';
 import Stopwatch from '../images/stopwatch.svg';
 import Plus from '../images/plus.svg';
 import Close from '../images/x.svg';
+import WaterMark from '../images/watermark.svg';
 
 function UserTable() {
   const [showAddUserPopup, setShowAddUserPopup] = useState(false);
@@ -21,6 +22,7 @@ function UserTable() {
   return (
     <div className='bg_main'>
       <Header />
+
       <div className='container '>
         <div className='d-flex flex-column pt-5 pb-3'>
           <h5 className='text-white'>Admin</h5>
@@ -104,10 +106,14 @@ function UserTable() {
           </div>
         </div>
       </div>
+      <div className='watermark-wrapper'>
+        <img src={WaterMark} alt='watermark' className='watermark' />
+      </div>
 
       <div className='container'>
         <Table />
       </div>
+
       <Footer />
     </div>
   );
