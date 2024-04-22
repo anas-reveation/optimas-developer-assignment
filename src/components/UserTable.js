@@ -106,9 +106,6 @@ function UserTable() {
           </div>
         </div>
       </div>
-      <div className='watermark-wrapper'>
-        <img src={WaterMark} alt='watermark' className='watermark' />
-      </div>
 
       <div className='container'>
         <Table />
