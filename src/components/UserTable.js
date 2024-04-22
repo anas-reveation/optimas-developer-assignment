@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Table from '../components/Table';
 
 import Defination from '../images/defination.svg';
-import Stopwatch from '../images/stopwatch.svg';
+import Stopwatch from '../images/tickcircle.svg';
 import Plus from '../images/plus.svg';
 import Close from '../images/x.svg';
 import WaterMark from '../images/watermark.svg';
