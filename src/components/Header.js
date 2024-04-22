@@ -8,50 +8,66 @@ import Bell from '../images/bell_inner.svg';
 import Icon from '../images/icon.svg';
 import BellS from '../images/bell.gif';
 import Arrow from '../images/solid_arrow.svg';
+import Drop from '../images/drop.svg';
 
-// Adjust the path accordingly
 import '../App.css';
-// Assuming Font Awesome for icons
 
 import loginImg from '../images/scifi_1 1.svg';
 
 function Header() {
+  const [showTopBar, setShowTopBar] = useState(true);
+
+  const toggleTopBar = () => {
+    setShowTopBar(!showTopBar);
+  };
+
   return (
-    <div className='container-fluid '>
-      <div className='d-flex justify-content-between '>
+    <div className='container-fluid'>
+      <div className='d-flex justify-content-between'>
         <img src={logoLogin} alt='login page' className='height_55 m-3' />
         <div className='d-flex align-items-center flex-column'>
-          <div className='d-flex top_bar align-items-center px-4 py-4'>
-            <div className='border-end border-white '>
+          <div
+            className={`d-flex top_bar align-items-center px-4 py-4 ${
+              showTopBar ? '' : 'd-none'
+            }`}
+          >
+            <div className='border-end border-white'>
               <img
                 src={Dashboard}
                 alt='login page'
                 className='height_44 mx-4'
               />
             </div>
-            <div className='border-end border-white '>
+            <div className='border-end border-white'>
               <img src={User} alt='login page' className='height_44 mx-4' />
             </div>
-            <div className='border-end border-white '>
+            <div className='border-end border-white'>
               <img src={Roles} alt='login page' className='height_44 mx-4' />
             </div>
-            <div className=' '>
+            <div className=''>
               <img src={Setting} alt='login page' className='height_44 mx-4' />
             </div>
           </div>
-          <div className='arrow_bar border_bottom'>
-            <img src={Arrow} alt='login page' className='height_10 mx-5' />
+          <div
+            className='arrow_bar border_bottom'
+            onClick={toggleTopBar}
+            style={{ cursor: 'pointer' }}
+          >
+            <img
+              src={showTopBar ? Arrow : Drop}
+              alt='login page'
+              className='height_10 mx-5'
+            />
           </div>
         </div>
 
         <div className='row align-items-center'>
           <div className='col-6 gif'>
-            <img src={BellS} alt='login page' className=' ' />
+            <img src={BellS} alt='login page' className='' />
           </div>
           <div className='col-6'>
             <img src={Icon} alt='login page' className='h-100' />
             <img src={Bell} alt='login page' className='notification' />
-
             <div className='Bell_dot'></div>
           </div>
         </div>
