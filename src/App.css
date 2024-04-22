@@ -225,3 +225,14 @@ tr {
 .width_300 {
   width: 300px;
 }
+
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover,
+.form-control:-webkit-autofill:focus,
+.form-control:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-control:-webkit-autofill {
+  -webkit-text-fill-color: white; /* Set the text color */
+}
