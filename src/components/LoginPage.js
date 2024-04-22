@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import loginImg from '../images/scifi_1 1.svg';
+import Earth from '../images/login_earth.gif';
 import userIcon from '../images/user.svg';
 import passIcon from '../images/key.svg';
 import logoLogin from '../images/optimas logo.svg'; // Adjust the path accordingly
@@ -32,7 +33,7 @@ function LoginPage({ onLoginSuccess }) {
     <div className='container-fluid bg_main py-5'>
       <div className='row py-5 my-5 align-items-center'>
         <div className='col-12 col-xl-7'>
-          <img src={loginImg} alt='login page' className='w-75 blend_img' />
+          <img src={Earth} alt='login page' className='w-75 blend_img' />
         </div>
         <div className='col-12 col-xl-4 '>
           <img src={logoLogin} alt='login page' className='w-50 mb-3' />
