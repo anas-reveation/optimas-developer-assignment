@@ -5,6 +5,7 @@ import '../App.css';
 import Drop from '../images/drop.svg';
 import Search from '../images/search.svg';
 import Filter from '../images/filter.svg';
+import WaterMark from '../images/watermark.svg';
 
 function Table() {
   const [users, setUsers] = useState([]);
@@ -21,8 +22,10 @@ function Table() {
 
   return (
     <div>
-      <div className='table-container'>
-        <table className=''>
+      <div className='table-container '>
+        <img src={WaterMark} alt='login page' className='water_mark' />
+
+        <table className='z-2'>
           <thead>
             <tr>
               <th></th>

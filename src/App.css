@@ -164,11 +164,19 @@ div.card_body {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+.water_mark {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* table css */
 
 .table-container {
   color: white;
+  position: relative;
 }
 
 table {
