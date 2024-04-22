@@ -10,6 +10,7 @@ body {
 
 .input-group input {
   background-color: transparent;
+  outline: none;
 }
 .input-group input:focus {
   background-color: transparent;
